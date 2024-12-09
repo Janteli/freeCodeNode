@@ -1,0 +1,28 @@
+#Buil in modules 
+
+-OS
+-PATH
+-FS
+-HTTP
+
+Asynchronous -non blocking code
+Shnchronous - blocking code
+
+monodb
+install mongodb-compass mongodb-shell
+cmd - mongosh for connection
+db.show 
+use dbname - creating db
+db.users.find()
+db.users.insertOne({name:"suraz"})
+db.users.find()
+db.users.insertMany([{name:"hari",age:22},{name:"sita",age:23}])
+db.users.find({name:"hari"})
+db.users.updateOne({name:"hari"}, {$set:({school:12})})
+db.users.find().pretty()
+db.users.find({age: {$gt:20}})
+db.users.find({age: {$lt:20}})
+db.users.insertOne({name:'raju', age:24, contact:{phone:"1234234"}})
+db.users.deleteOne({name:'sita'})
+
+npm --version
